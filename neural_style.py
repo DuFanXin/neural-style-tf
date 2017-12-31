@@ -232,7 +232,8 @@ def parse_args():
 '''
 
 def build_model(input_img):
-  if args.verbose: print('\nBUILDING VGG-19 NETWORK')
+  if args.verbose:
+    print('\nBUILDING VGG-19 NETWORK')
   net = {}
   _, h, w, d     = input_img.shape
   
